@@ -1,0 +1,20 @@
+----
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140012
+timestamp: 2026-09-01T13:05:41Z
+hostname: ubuntu
+---[user: getent passwd]---
+alice177:x:1002:1003::/home/alice177:/bin/sh
+---[group: getent group]---
+qa:x:1005:alice177
+---[user-in-group: id]---
+uid=1002(alice177) gid=1003(alice177) groups=1003(alice177),1005(qa)
+---[file stat: home file mode/owner]---
+/home/alice177/report_2567.txt mode=700 owner=alice177 group=alice177
+---[sshd effective config]---
+port 2540
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 5f5536e2527ede52cfc277ecb30427b78040dcd6dd8a9387f0aadc5f63616cd0
+===END LAB1 SUBMISSION===
